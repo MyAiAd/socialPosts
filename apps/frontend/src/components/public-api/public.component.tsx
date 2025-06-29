@@ -38,7 +38,7 @@ export const PublicComponent = () => {
         <br />
         <a
           className="underline hover:text-white"
-          href="https://docs.postiz.com/public-api"
+          href="https://docs.myai.ad/public-api"
           target="_blank"
         >
           {t(
