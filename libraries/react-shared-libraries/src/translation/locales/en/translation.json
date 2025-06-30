@@ -284,7 +284,6 @@
   "thank_you_for_registering": "Thank you for registering!",
   "please_check_your_email_to_activate_your_account": "Please check your email to activate your account.",
   "sign_in_with": "Sign in with",
-  "continue_with_google": "Continue with Google",
   "sign_in_with_github": "Sign in with GitHub",
   "continue_with_farcaster": "Continue with Farcaster",
   "continue_with_your_wallet": "Continue with your Wallet",
@@ -491,5 +490,15 @@
   "separate_post": "Separate post to multiple posts",
   "label_who_can_reply_to_this_post": "Who can reply to this post?",
   "delete_integration": "Delete Integration",
-  "start_writing_your_post": "Start writing your post for a preview"
+  "start_writing_your_post": "Start writing your post for a preview",
+  "add_api": "Add API",
+  "copy_and_paste_webhook": "Copy and paste the webhook URL to your Slack channel",
+  "copy_and_paste_webhook_discord": "Copy and paste the webhook URL to your Discord channel",
+  "copy_and_paste_webhook_teams": "Copy and paste the webhook URL to your Microsoft Teams channel",
+  "click_on_the_link": "Click on the link to connect",
+  "redirect_url": "Redirect URL",
+  "api_url": "API URL",
+  "continue_with_github": "Continue with GitHub",
+  "or": "OR",
+  "one_click_import": "One Click Import"
 }
