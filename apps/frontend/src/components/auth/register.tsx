@@ -13,7 +13,6 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { LoadingComponent } from '@gitroom/frontend/components/layout/loading';
 import interClass from '@gitroom/react/helpers/inter.font';
 import clsx from 'clsx';
-import { GoogleProvider } from '@gitroom/frontend/components/auth/providers/google.provider';
 import { OauthProvider } from '@gitroom/frontend/components/auth/providers/oauth.provider';
 import { useFireEvents } from '@gitroom/helpers/utils/use.fire.events';
 import { useVariables } from '@gitroom/react/helpers/variable.context';
@@ -158,9 +157,7 @@ export function RegisterAfter({
             <div className="gap-[5px] flex flex-col">
               {genericOauth && isGeneral ? (
                 <OauthProvider />
-              ) : (
-                <GoogleProvider />
-              )}
+              ) : null}
               {!!neynarClientId && <FarcasterProvider />}
               {billingEnabled && <WalletProvider />}
             </div>

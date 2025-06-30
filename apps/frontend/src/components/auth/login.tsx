@@ -11,17 +11,18 @@ import { LoginUserDto } from '@gitroom/nestjs-libraries/dtos/auth/login.user.dto
 import { GithubProvider } from '@gitroom/frontend/components/auth/providers/github.provider';
 import { OauthProvider } from '@gitroom/frontend/components/auth/providers/oauth.provider';
 import interClass from '@gitroom/react/helpers/inter.font';
-import { GoogleProvider } from '@gitroom/frontend/components/auth/providers/google.provider';
 import { useVariables } from '@gitroom/react/helpers/variable.context';
 import { FarcasterProvider } from '@gitroom/frontend/components/auth/providers/farcaster.provider';
 import WalletProvider from '@gitroom/frontend/components/auth/providers/wallet.provider';
 import { useT } from '@gitroom/react/translation/get.transation.service.client';
+
 type Inputs = {
   email: string;
   password: string;
   providerToken: '';
   provider: 'LOCAL';
 };
+
 export function Login() {
   const t = useT();
   const [loading, setLoading] = useState(false);
@@ -68,7 +69,6 @@ export function Login() {
           <GithubProvider />
         ) : (
           <div className="gap-[5px] flex flex-col">
-            <GoogleProvider />
             {!!neynarClientId && <FarcasterProvider />}
             {billingEnabled && <WalletProvider />}
           </div>
